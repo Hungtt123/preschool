@@ -9,21 +9,23 @@
 }
 
 
-.avatar{
-    border-radius: 10%;	
+.avatar {
+    border-radius: 10%;
     width: 250px;
     height: 250px;
     margin: 3%;
 }
 
-.info-user{
-    display:flex;
+.info-user {
+    display: flex;
 }
-.infomation-user{
 
-   font-size: 20px ;
+.infomation-user {
+
+    font-size: 20px;
 }
-.info-form{
+
+.info-form {
     max-height: 70%;
     max-width: 80%;
     background-color: #eeeee4;
@@ -31,54 +33,64 @@
     border-radius: 25px;
     box-sizing: border-box;
 }
-.elo-flag{
+
+.elo-flag {
     display: flex;
     padding-top: 1em;
     font-size: 26px;
 
 
 }
-.update{
+
+.update {
     font-size: 26px;
 
 
 }
-.user-setting{
+
+.user-setting {
     display: flex;
 
 
 }
-.space{
+
+.space {
     padding-top: 10%;
 }
-.space-bottom{
+
+.space-bottom {
     padding-top: 3%;
 }
-.name-user{
+
+.name-user {
     font-size: 200%;
-   padding-top: 20px;
+    padding-top: 20px;
 
 }
 
-.badgesActions{
+.badgesActions {
     margin-left: 20px;
     display: flex;
 }
-.achieved-bagde{
+
+.achieved-bagde {
 
     list-style: none;
 }
-.nobull1{
+
+.nobull1 {
     padding-right: 10%;
     display: flex;
     list-style-type: none;
 }
-.nobull2{
+
+.nobull2 {
 
     display: flex;
     list-style-type: none;
 }
-.userStart  ul li {
+
+.userStart ul li {
     border-top: 1px solid;
     border-bottom: 1px solid;
     margin: 15px 0px 0px;
@@ -87,9 +99,24 @@
     padding-left: 1%;
 }
 
-.icon{
+.icon {
     width: 50px;
 }
-.popularOpponent{
+
+.popularOpponent {
     padding-left: 40px;
 }
+.text{
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 100;
+}
+table, th, td {
+    border:1px solid black;
+    text-align: center;
+    font-size: 1em;
+  }
+  th{
+    color: rgb(249, 11, 11);
+    background-color: rgb(15, 239, 34);
+  }

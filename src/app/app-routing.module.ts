@@ -8,7 +8,8 @@ const routes: Routes = [{ path: 'home', loadChildren: () => import('./pages/home
                         { path: 'teacherinformation', loadChildren: () => import('./pages/teacherinformation/teacherinformation.module').then(m => m.TeacherinformationModule) },
                         { path: 'menu', loadChildren: () => import('./pages/menu/menu.module').then(m => m.MenuModule) },
                         { path: 'schedule', loadChildren: () => import('./pages/schedule/schedule.module').then(m => m.ScheduleModule) },
-                        { path: 'absencefrom', loadChildren: () => import('./pages/absencefrom/absencefrom.module').then(m => m.AbsencefromModule) }];
+                        { path: 'absencefrom', loadChildren: () => import('./pages/absencefrom/absencefrom.module').then(m => m.AbsencefromModule) },
+                        { path: 'classinformation', loadChildren: () => import('./pages/classinformation/classinformation.module').then(m => m.ClassinformationModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
