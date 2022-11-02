@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "preschool:build:production",
+            "firebaseProject": "chuyennganha-a8d20",
+            "firebaseHostingSite": "chuyennganha-a8d20"
+          }
         }
       }
     }

@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
+import { AuthState } from 'src/app/states/auth.state';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import * as AuthAction from "src/app/actions/auth.action"
 
 @Component({
   selector: 'app-login',
@@ -7,9 +13,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private Router: Router,private store: Store<{ auth: AuthState}>,private AuthService: AuthService) {
+    this.auth$ = this.store.select(state => state.auth);
+  }
+  auth$: Observable<AuthState>;
 
   ngOnInit(): void {
+    this.auth$.subscribe(
+      res => {
+        if (res.isLoading) {
+          window.location.href = "/home"
+        }
+      }
+    )
+  }
+  public account = {
+    email: "",
+    password: ""
+  }
+  login() {
+    this.store.dispatch(AuthAction.login())
+  }
+  loginWithEmail() {
+    this.AuthService.signInEmailAndPassword(this.account.email, this.account.password)
+      .then(res => {
+        console.log(res);
+        this.Router.navigate(['/home'])
+      })
+      .catch(err => {
+        console.log(err);
+      })
   }
 
 }
