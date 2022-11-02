@@ -1,27 +1,33 @@
 <section class="wrapper">
-    <div class="left">
-      <img class="left-image"
-      src="../assets/avatar/logo.jpg" >
+  <div class="left">
+    <img class="left-image"
+      src="https://congkhanhluat.vn/wp-content/uploads/2020/09/tr%C6%B0%E1%BB%9Dng-m%E1%BA%A7m-non-c%C3%B3-y%E1%BA%BFu-t%E1%BB%91-n%C6%B0%E1%BB%9Bc-ngo%C3%A0i.jpg"
+      alt="prechhool">
 
+  </div>
+  <div class="right">
+    <div class="panel login">
+      <p class="title">PreSchool</p>
+      <form style="margin: 40px">
+        <input [(ngModel)]="account.email" class="input-box" type="text" name="username" required placeholder="Phone number, username, or email">
+        <input [(ngModel)]="account.password" class="input-box" type="password" name="password" required placeholder="Password">
+        <input (click)="loginWithEmail()" class="button" type="submit" name="login" value="Log In">
+        <div class="divider">
+          <div class="line"></div>
+          <p>OR</p>
+          <div class="line"></div>
+        </div>
+        <a (click)="login()" class="fb">Log in with Google</a>
+        <a class="forgot" href=#>Forgot password?</a>
+      </form>
     </div>
-    <div class="right">
-      <div class="panel login">
-        <p class="title">TRƯỜNG MẦM NON Hoa Sen</p>
-        <form style="margin: 40px">
-          <input class="input-box" type="text" name="username" required
-            placeholder="Phone number, username, or email">
-          <input class="input-box" type="password" name="password" required
-            placeholder="Password">
-          <input  style="background-color: #0095f6;" class="button" type="submit" name="login"
-            value="Log In">
-          <div class="divider">
-
-
-
-          </div>
-
-        </form>
-      </div>
-
+    <div class="panel signup">
+      <p>Don't have an account?</p>
+      <a routerLink="/register">Sign up</a>
     </div>
-  </section>
+    <div class="apps">
+    </div>
+  </div>
+</section>
+
+

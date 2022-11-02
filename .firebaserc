@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chuyennganha-a8d20": {
+      "hosting": {
+        "preschool": [
+          "chuyennganha-a8d20"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chuyennganha-a8d20"
+  }
+}

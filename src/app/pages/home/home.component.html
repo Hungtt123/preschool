@@ -1,1 +1,133 @@
-<p>home works!</p>
+<header>
+
+  <div class="logo">
+    <img src="assets/non.jpg" alt="">
+  </div>
+  <div class="menu">
+    <li><a href="">Giới Thiệu</a>
+      <ul class="sub-menu">
+        <li><a href="">Giới thiệu trường học</a></li>
+        <li routerLink="/teacherinformation"><a>Đội ngũ giảng viên</a></li>
+        <li><a href="">Một ngày của bé ở trường</a></li>
+        <li><a href="">Học phí của trường Hoa Mai</a></li>
+      </ul>
+
+    </li>
+    <li><a href="">Chương trình giáo dục</a>
+
+    </li>
+    <li><a href="">Tin tức</a>
+      <ul class="sub-menu">
+        <li><a href="">Thông báo</a></li>
+        <li routerLink="/menu"><a>Thực đơn của trẻ</a></li>
+        <li><a href="">Tin giáo dục</a></li>
+        <li routerLink="/schedule"><a>Thời khóa biểu</a></li>
+      </ul>
+    </li>
+    <li><a href="">Camera</a>
+      <ul class="sub-menu">
+        <li><a href="">Xem camera</a></li>
+      </ul>
+    </li>
+
+    <li><a href="">Hỗ trợ PHHS</a>
+      <ul class="sub-menu">
+        <li routerLink="/absencefrom"><a>Tải tài liệu học tập</a></li>
+        <li><a href="">Tiếp nhận các câu hỏi phụ huynh</a></li>
+        <li routerLink="/childinformation"><a>Thông tin của trẻ</a></li>
+      </ul>
+    </li>
+    <li><a href="">Điểm danh</a></li>
+
+
+  </div>
+  <div class="orthers">
+    <li><input type="text" placeholder="Tìm kiếm"></li>
+
+
+    </div>
+    <div class="profile-img">
+      <div *ngIf="user" ><span style="width:20px;height:20px; border-radius: 1px solid #fafafa;">
+          <div class="dropdown">
+            <img style="width:25px;height:25px;border-radius: 100%;" (error)="onImageError($event)"
+              [src]="user.photoURL" alt="">
+            <div class="dropdown-content">
+              <p (click)="signOut()">Đăng xuất</p>
+            </div>
+          </div>
+
+        </span>
+      </div>
+    </div>
+
+
+
+
+
+
+</header>
+<section id="Slider">
+  <div class="aspect-radio-169">
+     <img src="assets/trang1.jpg">
+  </div>
+
+</section>
+<section id="Slider2">
+  <div class="title">
+    <p>Tại Sao Trường Mầm Non Hoa Mai khác biệt?</p>
+  </div>
+  <div class="text1">
+    <img src="https://img4.thuthuatphanmem.vn/uploads/2020/08/28/anh-tranh-mam-non_090525705.jpg" alt="">
+    <span >Chương Trình Học Đặc Biệt</span>
+    <p>Chương trình học tập tại trường mầm non Hoa Mai được xây dựng phù hợp với nhu cầu phát triển của trẻ và sự mong đợi của Phụ huynh.</p>
+  </div>
+  <div class="text2">
+    <img src="https://img4.thuthuatphanmem.vn/uploads/2020/08/28/anh-tranh-mam-non_090525705.jpg" alt="">
+    <span >Chương Trình Montessori</span>
+    <p>Chương trình học 3-6 của Montessori có một khối lượng kiến thức khổng lồ nhưng lại dễ dàng một cách ngạc nhiên vì được xây dựng phù hợp với trẻ.</p>
+  </div>
+  <div class="text3">
+    <img src="https://img4.thuthuatphanmem.vn/uploads/2020/08/28/anh-tranh-mam-non_090525705.jpg" alt="">
+    <span >Cơ Sở Vật Chất Hiện Đại</span>
+    <p>Các phòng học rộng rãi, tạo không gian trong lành và thoáng mát giúp trẻ thoải mái vui chơi và trải nghiệm. Phụ huynh có thể theo dõi Camera dễ dàng.</p>
+  </div>
+
+</section>
+<section id="Slider3">
+  <div class="border">
+    <div class="img">
+      <img src="http://dongthap.edu.vn/upload/19963/fck/files/tre-mn-yb.jpg" alt="">
+    </div>
+    <div class="student">
+      <p>LỚP HỌC</p>
+      <span
+          style="width:100px;height:100px; border-radius: 1px solid #fafafa;">
+          <img style="width:90px;height:90px;border-radius: 100%;" src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/02/50-Anh-Meo-Cute-Ngau-Hinh-Avatar-Meo-De-Thuong.jpg" alt="">
+        </span>
+      <span class="preschool"><p>Lớp Mầm</p><u class="tuoi">(3-4 tuổi)</u></span>
+      <span class="hinh"
+          style="width:100px;height:100px; border-radius: 1px solid #fafafa;">
+          <img style="width:90px;height:90px;border-radius: 100%;" src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/02/50-Anh-Meo-Cute-Ngau-Hinh-Avatar-Meo-De-Thuong.jpg" alt="">
+        </span>
+      <span class="preschool1"><p>Lớp Chồi</p><u class="tuoi1">(4-5 tuổi)</u></span>
+      <span class="hinh2"
+          style="width:100px;height:100px; border-radius: 1px solid #fafafa;">
+          <img style="width:90px;height:90px;border-radius: 100%;" src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/02/50-Anh-Meo-Cute-Ngau-Hinh-Avatar-Meo-De-Thuong.jpg" alt="">
+        </span>
+      <span class="preschool2"><p>Lớp Lá</p><u class="tuoi2">(5-6 tuổi)</u></span>
+
+
+
+
+    </div>
+
+
+  </div>
+
+</section>
+<section id="Slider4">
+  <p class="end">Trường mầm non hoa mai</p>
+</section>
+
+
+
