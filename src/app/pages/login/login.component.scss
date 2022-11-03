@@ -21,7 +21,15 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 110px;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background: url('https://demoda.vn/wp-content/uploads/2022/02/hinh-nen-mam-non.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
+
 
 .left {
   position: relative;
