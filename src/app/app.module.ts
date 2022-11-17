@@ -19,9 +19,13 @@ import { authReducer } from './reducers/auth.reducer';
 import { AuthEffect } from './effects/auth.effect';
 import { HttpClientModule } from '@angular/common/http';
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
+
 
   ],
   imports: [
@@ -47,6 +51,10 @@ import { HttpClientModule } from '@angular/common/http';
     NbAutocompleteModule,
     NbInputModule,
     NbOptionModule,
+
+
+
+
 
 
   ],
