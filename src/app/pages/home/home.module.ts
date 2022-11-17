@@ -16,6 +16,7 @@ import * as AuthAction from "src/app/actions/auth.action"
   imports: [
     CommonModule,
     HomeRoutingModule
+
   ]
 })
 export class HomeModule {

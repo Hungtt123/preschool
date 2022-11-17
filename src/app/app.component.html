@@ -1,15 +1,47 @@
-
 <!-- <nb-layout>
+  <nb-layout-header *ngIf="user" fixed>
+    <nav class="nav">
+
+      <div class="wrapper">
+        <div class="logo" style="padding-top: 6px;padding-right: 110px;">
+          <a nbTooltip="Trang chủ" routerLink="/home"><img
+              src="assets/non.jpg"></a>
+        </div>
+
+
+
+          <div class="profile-img">
+            <div *ngIf="user"><span style="width:20px;height:20px; border-radius: 1px solid #fafafa;">
+                <div class="dropdown">
+                  <img style="width:25px;height:25px;border-radius: 100%;" (error)="onImageError($event)"
+                    [src]="user.photoURL" alt="">
+                  <div class="dropdown-content">
+                    <p (click)="signOut()">Đăng xuất</p>
+                  </div>
+                </div>
+
+              </span>
+            </div>
+          </div>
+
+        </div>
 
 
 
 
 
+
+
+
+
+
+
+    </nav>
+
+  </nb-layout-header>
 
   <nb-layout-column style="padding: 0;"> -->
     <router-outlet></router-outlet>
   <!-- </nb-layout-column>
-  </nb-layout> -->
 
-
-
+</nb-layout> -->
