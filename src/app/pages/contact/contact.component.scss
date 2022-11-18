@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background: url(https://www.dungplus.com/wp-content/uploads/2019/11/hinh-nen-may-tinh-4-800x450.jpg) no-repeat;
+  background-size: cover;
+}
+header {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  place-items: center;
+}
+h1{
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  gap: 1rem;
+}
+input,
+select,
+textarea {
+  padding: 1.4rem;
+  background: transparent;
+  border: 1px solid black;
+}
+textarea {
+  height: 6rem;
+}
+button {
+  width: 8rem;
+  padding: 1.4rem;
+  cursor: pointer;
+  background: #673de6;
+  color: white;
+}
