@@ -12,7 +12,10 @@ const routes: Routes = [{ path: 'home', loadChildren: () => import('./pages/home
                         { path: 'classinformation', loadChildren: () => import('./pages/classinformation/classinformation.module').then(m => m.ClassinformationModule) },
                         { path: 'register', loadChildren: () => import('./pages/register/register.module').then(m => m.RegisterModule) },
                         { path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule) },
-                        { path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule) }];
+                        { path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule) },
+
+
+                        ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

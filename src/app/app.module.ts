@@ -14,10 +14,14 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule, NbDialogService, NbCardModule, NbButtonModule, NbDialogModule, NbAutocompleteModule, NbInputModule, NbOptionModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { authReducer } from './reducers/auth.reducer';
 import { AuthEffect } from './effects/auth.effect';
 import { HttpClientModule } from '@angular/common/http';
+import {FileUploadModule} from 'ng2-file-upload';
+
+
+
 
 
 
@@ -25,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
+
 
 
   ],
@@ -51,6 +56,9 @@ import { HttpClientModule } from '@angular/common/http';
     NbAutocompleteModule,
     NbInputModule,
     NbOptionModule,
+    FileUploadModule,
+    ReactiveFormsModule,
+
 
 
 

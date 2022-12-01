@@ -1,4 +1,72 @@
 <header>
+
+  <div class="logo">
+    <img src="assets/non.jpg" alt="">
+  </div>
+  <div class="menu">
+    <li><a href="">Giới Thiệu</a>
+      <ul class="sub-menu">
+        <li><a href="">Giới thiệu trường học</a></li>
+        <li><a routerLink="/teacherinformation">Giảng viên</a></li>
+        <li><a routerLink="/box">Một ngày của bé ở trường</a></li>
+        <li><a href="">Học phí của trường Hoa Mai</a></li>
+      </ul>
+
+    </li>
+    <li><a href="">Chương trình giáo dục</a>
+
+    </li>
+    <li><a href="">Tin tức</a>
+      <ul class="sub-menu">
+        <li><a href="">Thông báo</a></li>
+        <li><a routerLink="/menu">Thực đơn của trẻ</a></li>
+        <li><a href="">Tin giáo dục</a></li>
+        <li><a routerLink="/schedule">Thời khóa biểu</a></li>
+      </ul>
+    </li>
+    <li><a href="">Camera</a>
+      <ul class="sub-menu">
+        <li><a href="">Xem camera</a></li>
+      </ul>
+    </li>
+
+    <li><a href="">Hỗ trợ PHHS</a>
+      <ul class="sub-menu">
+        <li><a routerLink="/absencefrom">Tải tài liệu học tập</a></li>
+        <li><a routerLink="/contact">Tiếp nhận các câu hỏi phụ huynh</a></li>
+        <li><a routerLink="/childinformation">Thông tin của trẻ</a></li>
+      </ul>
+    </li>
+    <li><a href="">Điểm danh</a></li>
+
+
+  </div>
+  <div class="orthers">
+    <li><input type="text" placeholder="Tìm kiếm"></li>
+
+
+    </div>
+    <div class="profile-img">
+      <div *ngIf="user" ><span style="width:20px;height:20px; border-radius: 1px solid #fafafa;">
+          <div class="dropdown">
+            <img style="width:25px;height:25px;border-radius: 100%;" (error)="onImageError($event)"
+              [src]="user.photoURL" alt="">
+            <div class="dropdown-content">
+              <p (click)="signOut()">Đăng xuất</p>
+            </div>
+          </div>
+
+        </span>
+      </div>
+    </div>
+
+
+
+
+
+
+</header>
+<section>
   <div class="title">
     <div class="box">
     <img src="https://freelancervietnam.vn/wp-content/uploads/2020/05/post-thumb-truong-mam-non-quoc-te.jpg" alt="">
@@ -19,4 +87,4 @@
       Trường mầm non Hương Sen nguyện sẽ tiếp tục vững bước đi lên, xứng đáng với niềm tin mà Đảng và nhà nước, ngành Giáo dục giao phó và là địa chỉ đỏ tin cậy của nhân dân!</p>
     </div>
     </div>
-</header>
+</section>
